@@ -25,13 +25,12 @@ VALUES ('Pelotas', 'Visconde da Graça 457', '991876544', 'F', '041.868.524-07')
 
 -- inserções na tabela generica 'PRODUTO'
 INSERT INTO PRODUTO(CODPROD,TIPO_PRODUTO,DESCRICAO, IMAGEM, PRECO, TITULO) VALUES 
-('1','Livro','heuser.jpg', '35.50', 'Projeto de Banco de Dados'),
-('2','Livro',  'Livro em ótimo estado de conservação. Sem sinais de uso e desgaste.', 
-	'url2', '22.50', 'Sistemas de Bancos de Dados'),
+('1','Livro','Livro se encontra em excelente estado de conservação.','heuser.jpg', '35.50', 'Projeto de Banco de Dados'),
+('2','Livro', 'Livro em ótimo estado de conservação. Sem sinais de uso e desgaste.', 'url2', '22.50', 'Sistemas de Bancos de Dados'),
 ('3','Livro','Brochura. Capa, lombada e miolo bem conservados.', 'url3', '45.00', 'A First Course in Database Systems'),
 ('4','Paper','Artigo sobre banco de dados', 'urlArtigo1', '20.50', 'A formal model of views for object oriented database systems'),
 ('5','Paper','Artigo de medicina', 'urlArtigo2', '15.50', 'Analise de DNA em medicina legal, banco de dados e controle de qualidade'),
-('6','Paper','Artigo musical', 'urlArtigo2', '10.50', 'O Centro de Documentação Musical da UFPel no horizonte da multidisciplinaridade articulações entre musicologia histórica, gestão patrimonial e memória institucional'),
+('6','Paper','Artigo musical', 'urlArtigo2', '10.50', 'O Centro de Documentação Musical da UFPel no horizonte da multidisciplinaridade'),
 ('7','Paper','Artigo sobre algoritmo de reconhecimento de objeto','urlArtigo2', '42.00', 'Distinctive image features from scale-invariant keypoints.'),
 ('8','Revista','Revista cientifica em ótimo estado de conservação', 'caminhodoArquivo', '42.50', 'Nature'),
 ('9','Revista','Revista em ótimo estado.', 'urlminha', '35.50', 'National Geographic'),
@@ -43,12 +42,11 @@ INSERT INTO PRODUTO(CODPROD,TIPO_PRODUTO,DESCRICAO, IMAGEM, PRECO, TITULO) VALUE
 ('15','Livro','Livro usado em perfeito estado', 'url3', '27.90', 'O Conto da Aia'),
 ('16','Livro','Capa com leves marcas do manuseio e as paginas em bom estado de conservação', 'url3', '24.20', 'Uma Breve História do Tempo'),
 ('17','Livro','Capa dura com desgastes. meio desbotando as letras, marcas nas bordas.s.', 'url3', '87.90', 'Crítica da Razão Pura'),
-('18','Livro','Bom estado de capa e miolo um pouco amarelado alguns pontinhos de oxidação na borda superior.', 'url3', '60.20', 'Jogo Perigoso'),
+('18','Livro','Bom estado de capa e miolo um pouco amarelado.', 'url3', '60.20', 'Jogo Perigoso'),
 ('19','Livro','Livro em bom estado de conservação.', 'url2', '145.51', 'Sistemas de Bancos de Dados'),
 ('20','Revista','Revista cientifica em bom estado.', 'url2', '64.45', 'Icarus'),
 ('21','Revista','Em bom estado de convervação.', 'url2', '75.99', 'Physical Review'),
-('22','Paper','Artigo que discute a complexidade no estudo da intersetorialidade e oferece diferentes metodos para faze-lo.', 
-	   'url2', '89.59', 'The complexity of intersectionality');
+('22','Paper','Artigo que discute a complexidade no estudo da intersetorialidade.', 'url2', '89.59', 'The complexity of intersectionality');
 
 
 -- inserções na tabela 'LIVRO', que contem como chave estrangeira o atributo 'CODPROD' que referencia a tabela 'PRODUTO'
@@ -106,19 +104,19 @@ VALUES('0','0','2018-06-20','041.868.524-07'),
 
 
 -- Inserções na tabela do 'PAGAMENTO'
-INSERT INTO PAGAMENTO(CODPAG,METODO_PAG,VALOR,CONCRETIZADO)
+INSERT INTO PAGAMENTO(CODPAG,METODO_PAG,VALOR,CONCRETIZADO,CODPROD)
 VALUES
-('1','Boleto','80.50',0),
-('2','PayPal','20.50',1),
-('3','Cartão','35.00',0),
-('4','Transferência','27.90',0),
-('5','PayPal','75.99',1) ;
+('1','Boleto','80.50',0,'10'),
+('2','PayPal','20.50',1,'4'),
+('3','Cartão','35.50',0,'1'),
+('4','Transferência','27.90',0,'15'),
+('5','PayPal','75.99',1,'21') ;
 
 -- Inserções na tabela 'VENDA'
 INSERT INTO VENDA(CODVENDA,VALOR_VENDA,DATA_VENDA,CPF,CODPAG) 
 VALUES ('1','80.59','2018-05-07','019.372.432-53','1'),
 ('2','20.50','2018-07-29','019.872.232-50', '2'),
-('3','35.00','2018-03-18','021.274.785-44','3'),
+('3','35.50','2018-03-18','021.274.785-44','3'),
 ('4','27.90','2018-06-29','041.868.524-07','4'),
 ('5','75.99','2018-03-15','021.274.785-44','5');
 
@@ -149,6 +147,3 @@ VALUES ('1', 10, 'Excelente vendedora', '019.372.432-53'),
 ('3', 2, 'Paguei o produto mas nao o recebi ainda', '011.812.331-28'),
 ('4', 9, 'Confiavel.', '021.274.785-44'),
 ('5', 5, 'Descrição do produto não correspondia com a realidade', '013.772.232-57');
-
-
-
