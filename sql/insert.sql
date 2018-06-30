@@ -6,10 +6,13 @@ VALUES ('041.868.524-07', 'Geovana', 'gsdsilveira@inf.ufpel.edu.br', 'hfgdshj', 
 ('021.274.785-44', 'Pedro Roque', 'pedromroque@gmail.com', '66666', '1'),
 ('081.924.648-93', 'Vitor', 'vitorgosmao@gmail.com', 'xscvb', '1'),
 ('019.372.432-53', 'Ana', 'marilza@inf.ufpel.edu.br', '567eih', '1'),
-('019.872.232-50', 'Teste', 'mme.ufpel.edu.br', '1234', '0'),
+('019.872.232-50', 'Rodrigo', 'rodrigo.ufpel.edu.br', '1234', '0'),
 ('052.512.331-25', 'Carlos', 'carlos@hotmail.com', '12345677', '0'),
 ('013.772.232-57', 'Paulo', 'paulo@inf.ufpel.edu.br', '1234', '0'),
-('011.812.331-28', 'Joaquim', 'Joaquim@hotmail.com', '1256', '0');
+('011.812.331-28', 'Joaquim', 'Joaquim@outlook.com', '1256', '0'),
+('053.412.224-73', 'Jake Peralta', 'peralta@gmail.com', '9999', '0'),
+('094.426.152-22', 'Suelen', 'suh@hotmail.com', 'sdfghn', '0');
+
 
 -- inserções na tabela 'USUARIO', que referencia o atributo cpf da tabela 'PESSOA' como chave estrangeira
 INSERT INTO USUARIO(cidade, endereco, telefone, sexo, cpf) 
@@ -18,9 +21,11 @@ VALUES ('Pelotas', 'Visconde da Graça 457', '991876544', 'F', '041.868.524-07')
 ('Pelotas', 'Goncalves Chaves 1002', '32221525', 'M', '081.924.648-93'),
 ('Pelotas', 'Goncalves Chaves 1003', '32821525', 'F', '019.372.432-53'),
 ('Pelotas', 'Goncalves Chaves 1004', '32221525', 'F', '019.872.232-50'),
-('Pelotas', 'Quinze de novembro 2009', '97567867', 'M', '052.512.331-25'),
-('Pelotas', 'Quinze de novembro 2100', '91276888', 'M', '013.772.232-57'),
-('Pelotas', 'Gomes Carneiro 4080', '992456765', 'M', '011.812.331-28');
+('Rio Grande', 'Barão de Cotegipe , N° 415', '97567867', 'M', '052.512.331-25'),
+('São Paulo', 'Praça da Sé 2100', '91276888', 'M', '013.772.232-57'),
+('Rio de Janeiro', 'Av. Presidente Vargas', '992456765', 'M', '011.812.331-28'),
+('Nova York', 'Av. Brooklyn', '821567677', 'M', '053.412.224-73'),
+('Aracaju', 'Rua Vila Cristina', '991488345', 'F', '094.426.152-22');
 
 
 -- inserções na tabela generica 'PRODUTO'
@@ -147,3 +152,6 @@ VALUES ('1', 10, 'Excelente vendedora', '019.372.432-53'),
 ('3', 2, 'Paguei o produto mas nao o recebi ainda', '011.812.331-28'),
 ('4', 9, 'Confiavel.', '021.274.785-44'),
 ('5', 5, 'Descrição do produto não correspondia com a realidade', '013.772.232-57');
+
+
+
