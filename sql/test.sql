@@ -42,6 +42,10 @@ USE MeLivro;
 -- SELECT USUARIO.* FROM USUARIO
 -- LEFT JOIN PESSOA ON PESSOA.CPF=USUARIO.CPF;  
                  
+
+--SET SQL_SAFE_UPDATES=0;
+--UPDATE PRODUTO 
+ -- SET PRECO = '25.0' WHERE PRECO='35.50';
        
 
 -- Mostra os dado inseridos nas tabelas 
