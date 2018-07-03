@@ -150,8 +150,6 @@ INSERT INTO AVALIACAO(CODAVALIACAO,NOTA,COMENTARIO,CPF)
 VALUES ('1', 10, 'Excelente vendedora', '019.372.432-53'),
 ('2', 8, 'Nao obtive nenhum problema durante o processo de compra do produto', '041.868.524-07'),
 ('3', 2, 'Paguei o produto mas nao o recebi ainda', '011.812.331-28'),
-('4', 9, 'Confiavel.', '021.274.785-44'),
-('5', 5, 'Descrição do produto não correspondia com a realidade', '013.772.232-57');
-
-
-
+('4', 9, 'Não tenho do que reclamar.', '021.274.785-44'),
+('5', 5, 'Descrição do produto não correspondia com a realidade', '013.772.232-57'),
+('6', 8, 'Produto batia com a descrição', '081.924.648-93');
