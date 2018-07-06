@@ -30,28 +30,28 @@ VALUES ('Pelotas', 'Visconde da Graça 457', '991876544', 'F', '041.868.524-07')
 
 -- inserções na tabela generica 'PRODUTO'
 INSERT INTO PRODUTO(CODPROD,TIPO_PRODUTO,TITULO,DESCRICAO,PRECO,IMAGEM) VALUES 
-('1','Livro','Projeto de Banco de Dados','Livro se encontra em excelente estado de conservação.', '35.50','imagem/heuser.jpg'),
-('2','Livro','Sistemas de Bancos de Dados','Livro em ótimo estado de conservação. Sem sinais de uso e desgaste.','22.50','imagem/navathe.jpg'),
-('3','Livro','A First Course in Database Systems','Brochura. Capa, lombada e miolo bem conservados.','45.00','imagem/ullaman.jpg'),
-('4','Paper','A formal model of views for object oriented database systems','Artigo sobre banco de dados','20.50', 'urlArtigo1'),
-('5','Paper','Analise de DNA em medicina legal, banco de dados e controle de qualidade','Artigo de medicina','15.50','urlArtigo2'),
-('6','Paper','O Centro de Documentação Musical da UFPel no horizonte da multidisciplinaridade','Artigo','10.50','urlArtigo3'),
-('7','Paper','Distinctive image features from scale-invariant keypoints','Artigo sobre algoritmo de reconhecimento de objeto','42.00','urlArtigo4'),
-('8','Revista','Nature','Revista cientifica em ótimo estado de conservação','42.50','imagem/nature.jpg'),
-('9','Revista','National Geographic','Revista em ótimo estado.','35.50','imagem/national.jpg'),
-('10','Revista','IEEE/ACM Transactions on Networking', 'Revista seminova em otimas condições','80.50', 'imagem/ieeetransactions.jpg'),
-('11','Revista','ACM Computing Reviews','Revista em perfeito estado','96.50', 'imagem/acmcomputing.jpg'),
-('12','Livro','A Revolução dos Bichos','Em bom estado de conservação e com as páginas conservadas','27.90','imagem/revolucaodosbichos.jpg'),
-('13','Livro','Alice no País das Maravilhas','Bom estado de conservaçao mas a lombada superior e inferior danificadas','25.45','imagem/alice.jpg'),
-('14','Livro','O Andar do Bêbado','322 paginas. Bom estado e edição de bolso.','49.90','imagem/oandardobebado.jpg'),
-('15','Livro','O Conto da Aia','Livro usado em perfeito estado','27.90','imagem/ocontodaaia.jpg'),
-('16','Livro','Uma Breve História do Tempo','Capa com leves marcas do manuseio e as paginas em bom estado de conservação','24.20','imagem/umabrevehistoria.jpg'),
-('17','Livro','Crítica da Razão Pura','Capa dura com desgastes. meio desbotando as letras, marcas nas bordas.','87.90','imagem/livrokant.jpg'),
-('18','Livro','Jogo Perigoso','Bom estado de capa e miolo um pouco amarelado.','60.20','imagem/jogoperigoso.jpg'),
-('19','Livro','Sistemas de Bancos de Dados','Livro em bom estado de conservação.','145.51','imagem/navathe4ed.jpg'),
-('20','Revista','Icarus','Revista cientifica em bom estado.','64.45','imagem/icarus'),
-('21','Revista','Physical Review','Em bom estado de convervação.','75.99', 'imagem/physical.jpg'),
-('22','Paper','The complexity of intersectionality','Artigo que discute a complexidade no estudo da intersetorialidade.','89.59','url4');
+('1','Livro','Projeto de Banco de Dados','Livro se encontra em excelente estado de conservação.', '35.50','upload/3529f7506036c332ed82ec153f027c53.jpg'),
+('2','Livro','Sistemas de Bancos de Dados','Livro em ótimo estado de conservação. Sem sinais de uso e desgaste.','22.50','upload/d851e0deb8caf7b315562a84222e5fb8.jpg'),
+('3','Livro','A First Course in Database Systems','Brochura. Capa, lombada e miolo bem conservados.','45.00','upload/0b81425eec5c14eef550656b4988131c.jpg'),
+('4','Paper','A formal model of views for object oriented database systems','Artigo sobre banco de dados','20.50', 'caminhodoarquivo'),
+('5','Paper','Analise de DNA em medicina legal, banco de dados e controle de qualidade','Artigo de medicina','15.50','caminhodarquivo2'),
+('6','Paper','O Centro de Documentação Musical da UFPel no horizonte da multidisciplinaridade','Artigo','10.50','caminhodarquivo3'),
+('7','Paper','Distinctive image features from scale-invariant keypoints','Artigo sobre algoritmo de reconhecimento de objeto','42.00','caminhodarquivo4'),
+('8','Revista','Nature','Revista cientifica em ótimo estado de conservação','42.50','upload/96c561a11f53d3959dc673d1e91f798e.jpg'),
+('9','Revista','National Geographic','Revista em ótimo estado.','35.50','upload/309b657a5b6be24c005194d1793d9679.jpg'),
+('10','Revista','IEEE/ACM Transactions on Networking', 'Revista seminova em otimas condições','80.50', 'upload/7d1ed8a671ba5f91e09b2752206f60fd.jpg'),
+('11','Revista','ACM Computing Reviews','Revista em perfeito estado','96.50', 'upload/7075be8a04e7b2d00af45a78ddcedd14.jpg'),
+('12','Livro','A Revolução dos Bichos','Em bom estado de conservação e com as páginas conservadas','27.90','upload/3314d87134c8e0782642b86f8a57fe1b.jpg'),
+('13','Livro','Alice no País das Maravilhas','Bom estado de conservaçao mas a lombada superior e inferior danificadas','25.45','upload/4070d4a79147c75fac7ea0b2c16eb10b.jpg'),
+('14','Livro','O Andar do Bêbado','322 paginas. Bom estado e edição de bolso.','49.90','upload/92795b94d3ec27aedc1e199f235636dd.jpg'),
+('15','Livro','O Conto da Aia','Livro usado em perfeito estado','27.90','upload/baff74ebadb561d5eb9a859d7bb87e9f.jpg'),
+('16','Livro','Uma Breve História do Tempo','Capa com leves marcas do manuseio e as paginas em bom estado de conservação','24.20','upload/ce50190b30959f174a0c4044165f3a67.jpg'),
+('17','Livro','Crítica da Razão Pura','Capa dura com desgastes. meio desbotando as letras, marcas nas bordas.','87.90','upload/63f8f62f334f8236fad70cf6f2f2061d.jpg'),
+('18','Livro','Jogo Perigoso','Bom estado de capa e miolo um pouco amarelado.','60.20','upload/8462f9d7d1b1f495cec8f16854623330.jpg'),
+('19','Livro','Sistemas de Bancos de Dados','Livro em bom estado de conservação.','145.51','upload/fda87739688354e85e73c237b1f39886.jpg'),
+('20','Revista','Icarus','Revista cientifica em bom estado.','64.45','upload/ccd5c86cb916b14eae06c0a7cd199653.jpg'),
+('21','Revista','Physical Review','Em bom estado de convervação.','75.99', 'upload/a26e3078c85161059abe4e2778600203.jpg'),
+('22','Paper','The complexity of intersectionality','Artigo que discute a complexidade no estudo da intersetorialidade.','89.59','caminhodoarquivo5');
 
 
 -- inserções na tabela 'LIVRO', que contem como chave estrangeira o atributo 'CODPROD' que referencia a tabela 'PRODUTO'
@@ -152,7 +152,9 @@ VALUES ('1', 10, 'Excelente vendedora', '019.372.432-53'),
 ('3', 2, 'Paguei o produto mas nao o recebi ainda', '011.812.331-28'),
 ('4', 9, 'Não tenho do que reclamar.', '021.274.785-44'),
 ('5', 5, 'Descrição do produto não correspondia com a realidade', '013.772.232-57'),
-('6', 8, 'Produto batia com a descrição', '081.924.648-93');
+('6', 8, 'Produto comprado do vendedor batia com a descrição', '081.924.648-93');
+
+
 
 
 
