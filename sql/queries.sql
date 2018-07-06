@@ -1,23 +1,28 @@
 USE MeLivro;
 
--- SELECT * FROM PRODUTO
---  WHERE PRODUTO.TIPO_PRODUTO = "Livro";
+--  SELECT * FROM PRODUTO
+--   WHERE PRODUTO.TIPO_PRODUTO = "Livro";
 
--- SELECT * FROM PRODUTO
--- WHERE PRODUTO.TIPO_PRODUTO = "Paper";
+--  SELECT * FROM PRODUTO
+--   WHERE PRODUTO.TIPO_PRODUTO = "Paper";
  
--- SELECT * FROM PRODUTO
---  WHERE PRODUTO.TIPO_PRODUTO = "Revista";
+--  SELECT * FROM PRODUTO
+--   WHERE PRODUTO.TIPO_PRODUTO = "Revista";
 
--- Retorna o nome da pessoa, o titulo do produto, o tipo de produto e o preco do produto pedido pelo usuario
+--  Retorna o nome da pessoa, o titulo do produto, o tipo de produto e o preco do produto pedido pelo usuario
 --  SELECT NOME,TITULO,TIPO_PRODUTO,PRECO
---  FROM ((PESSOA NATURAL JOIN PRODUTO_PEDIDO)NATURAL JOIN PRODUTO)
---  WHERE (PRODUTO.CODPROD = PRODUTO_PEDIDO.CODPROD);
+--   FROM ((PESSOA NATURAL JOIN PRODUTO_PEDIDO)NATURAL JOIN PRODUTO)
+--   WHERE (PRODUTO.CODPROD = PRODUTO_PEDIDO.CODPROD);
+
+--  Retorna o nome, o cpf e o titulo do produto de todas as pessoas que realizaram uma venda no dia 7 do mês de maio de 2018
+--  SELECT NOME,PESSOA.CPF,TITULO
+--   FROM (((PESSOA NATURAL JOIN VENDA) NATURAL JOIN PAGAMENTO) NATURAL JOIN PRODUTO)
+--   WHERE DATA_VENDA = '2018-05-07' AND PESSOA.CPF = VENDA.CPF;
 
 -- Retorna os nomes de todas as pessoas que não fizeram nenhuma venda
--- SELECT NOME 
---  FROM PESSOA U
---  WHERE NOT EXISTS(SELECT * FROM VENDA V WHERE U.CPF = V.CPF);
+--  SELECT NOME 
+--   FROM PESSOA U
+--   WHERE NOT EXISTS(SELECT * FROM VENDA V WHERE U.CPF = V.CPF);
      
 -- Seleciona ordenando por código do pedido o nome da pessoa que solicitou o produto, o numero do seu cpf e o titulo deste produto
 --  SELECT DISTINCT PEDIDO.CODPEDIDO,PESSOA.CPF,NOME,TITULO
@@ -27,12 +32,16 @@ USE MeLivro;
 -- Retorna os nomes de todas as pessoas que não fizeram nenhum pedido
 --  SELECT NOME 
 --  FROM PESSOA U
---   WHERE NOT EXISTS(SELECT * FROM PEDIDO P WHERE U.CPF = P.CPF);
- 
+--  WHERE NOT EXISTS(SELECT * FROM PEDIDO P WHERE U.CPF = P.CPF);
+
+-- Retorna o titulo e a edicao de todos os livros do autor 'Navathe'
+-- SELECT TITULO,EDICAO
+--  FROM PRODUTO, LIVRO
+--  WHERE AUTOR = 'Navathe' and LIVRO.CODPROD=PRODUTO.CODPROD;
+
 -- Retorna o nome da pessoa que realizou o pedido,o valor da venda e a data da venda  
 -- SELECT NOME,VALOR_VENDA,DATA_VENDA FROM ((PESSOA NATURAL JOIN VENDA_PEDIDO)NATURAL JOIN VENDA)
 --  WHERE (VENDA.CODVENDA = VENDA_PEDIDO.CODVENDA);
- 
  
 -- Retorna o nome da pessoa, o titulo do produto e o status do anúncio cadastrado
 --  SELECT NOME,TITULO,ATIVO 
@@ -43,7 +52,6 @@ USE MeLivro;
  -- SELECT TITULO 
  --  FROM (PRODUTO NATURAL JOIN PAGAMENTO)
  --  WHERE CONCRETIZADO = '0';
- 
  
 -- Retorna a quantidade de pagamentos realizados atraves do metodo 'PayPal'
 --  SELECT COUNT(*)
@@ -94,15 +102,14 @@ USE MeLivro;
 --  WHERE (USUARIO.CPF = PESSOA.CPF);
   
 -- SELECT DISTINCT * FROM PAGAMENTO
---    INNER JOIN VENDA
---    ON (PAGAMENTO.CODPAG = VENDA.CODPAG);
+--   INNER JOIN VENDA
+--   ON (PAGAMENTO.CODPAG = VENDA.CODPAG);
 
 --  SELECT NOME,CPF,EMAIL,SENHA
 --    FROM PESSOA;
 
-
 --  SELECT DISTINCT CODPEDIDO,PEDIDO.CPF,TITULO,VALOR_VENDA
---  FROM PEDIDO,PRODUTO,VENDA
+--   FROM PEDIDO,PRODUTO,VENDA
 --   WHERE TIPO_PRODUTO = "Livro"
 --   ORDER BY CODVENDA;
        
@@ -124,7 +131,6 @@ USE MeLivro;
 --  (SELECT CODPROD FROM LIVRO
 --   WHERE AUTOR = 'Navathe');
 
-
 -- Mostra os dado inseridos nas tabelas 
 -- SELECT *FROM PESSOA;
 -- SELECT *FROM USUARIO;
@@ -139,3 +145,4 @@ USE MeLivro;
 -- SELECT *FROM VENDA_PEDIDO;
 -- SELECT *FROM PAGAMENTO;
 -- SELECT *FROM AVALIACAO;
+--  SELECT *FROM ARQUIVO;
