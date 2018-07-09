@@ -1,10 +1,10 @@
 <?php
 
 /** O nome do banco de dados*/
-define('DB_NAME', 'id6405184_melivro');
+define('DB_NAME', 'id6422900_melivro');
 
 /** Usuário do banco de dados MySQL */
-define('DB_USER', 'id6405184_root');
+define('DB_USER', 'id6422900_melivro');
 
 /** Senha do banco de dados MySQL */
 define('DB_PASSWORD', 'melivro');
